@@ -1,3 +1,5 @@
+package hu.kalee.math;
+
 import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +16,7 @@ public class IntegerFibonacciNumberCalculator implements FibonacciNthNumberCalcu
         assertIndexBound(index);
 
         Integer previous = 0,
-            actual = 1;
+                actual = 1;
 
         for (int i = 1; i < index; i++) {
             Pair<Integer, Integer> temp = calculateNext(previous, actual);

@@ -1,3 +1,5 @@
+package hu.kalee.math;
+
 /**
  * Created by Moondancer83 on 2016.05.29..
  */

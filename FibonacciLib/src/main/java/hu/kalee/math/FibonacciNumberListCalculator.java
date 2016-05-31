@@ -1,7 +1,9 @@
+package hu.kalee.math;
+
 import java.util.List;
 
 /**
- * Created by Marci on 2016.05.30..
+ * Created by Moondancer83 on 2016.05.30..
  */
 @FunctionalInterface
 public interface FibonacciNumberListCalculator {
