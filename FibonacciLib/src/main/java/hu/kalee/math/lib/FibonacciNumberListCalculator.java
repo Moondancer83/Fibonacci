@@ -1,4 +1,4 @@
-package hu.kalee.math;
+package hu.kalee.math.lib;
 
 import java.util.List;
 

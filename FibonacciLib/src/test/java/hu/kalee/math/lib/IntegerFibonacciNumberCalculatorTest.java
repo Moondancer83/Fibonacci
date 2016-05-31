@@ -1,4 +1,4 @@
-package hu.kalee.math;
+package hu.kalee.math.lib;
 
 import junit.framework.TestCase;
 import org.assertj.core.api.Assertions;
