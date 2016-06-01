@@ -1,4 +1,4 @@
-package hu.kalee.math;
+package hu.kalee.math.lib;
 
 /**
  * Created by Moondancer83 on 2016.05.29..

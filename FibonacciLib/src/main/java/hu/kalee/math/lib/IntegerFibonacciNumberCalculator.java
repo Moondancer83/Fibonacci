@@ -1,4 +1,4 @@
-package hu.kalee.math;
+package hu.kalee.math.lib;
 
 import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
