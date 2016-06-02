@@ -1,0 +1,5 @@
+# Common
+language: java
+
+# Build
+mvn clean test
