@@ -13,32 +13,33 @@
     <title>Moondancer's Math | Login</title>
 
     <link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/css/signin.css" />
 </head>
 <body>
 
 <c:url var="loginUrl" value="/login" />
-<form action="${loginUrl}" method="post">
-    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+<div class="container">
+    <form action="${loginUrl}" method="post" class="form-signin">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        <h2 class="form-signin-heading">Please sign in</h2>
 
-    <c:if test="${param.error != null}">
-        <p>
-            Invalid username and password.
-        </p>
-    </c:if>
+        <c:if test="${param.error != null}">
+            <div class="alert alert-danger" role="alert">
+                <p>
+                    Invalid username and password.
+                </p>
+            </div>
+        </c:if>
 
-    <p>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username"/>
-    </p>
+        <label for="username" class="sr-only">Email address</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Username" required="" autofocus="">
 
-    <p>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"/>
-    </p>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
 
-
-    <button type="submit">Log in</button>
-</form>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
 
 </body>
 </html>
