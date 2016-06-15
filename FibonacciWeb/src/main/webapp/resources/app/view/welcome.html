@@ -1,6 +1,10 @@
 <div class="row" data-ng-controller="WelcomeCtrl as wc">
     <div class="col-xs-12">
-        <h1>Welcome {{wc.userName}}!</h1>
+        <div data-ng-if="wc.message" class="alert alert-danger">
+            {{ wc.message }}
+        </div>
+
+        <h1>Welcome {{ wc.userName }}!</h1>
         <p>You are using Moondancer83's Fibonacci calculator.</p>
         <a href="#/fibonacci" class="btn btn-success">Start</a>
     </div>

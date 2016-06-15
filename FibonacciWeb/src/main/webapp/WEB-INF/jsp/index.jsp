@@ -29,7 +29,10 @@
 <script src="resources/app/script/AppRouter.js"></script>
 
 <script src="resources/app/script/WelcomeCtrl.js"></script>
-<%--<script src="resources/app/script/UserService.js"></script>--%>
+<script src="resources/app/script/UserService.js"></script>
+
+<script src="resources/app/script/FibonacciCtrl.js"></script>
+<script src="resources/app/script/FibonacciService.js"></script>
 
 </body>
 </html>
