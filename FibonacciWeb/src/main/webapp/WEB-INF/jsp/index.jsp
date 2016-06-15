@@ -13,10 +13,23 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<h1>Hello, world!</h1>
+<body data-ng-app="App" >
+
+<div class="container" data-ng-view>
+    Default content.
+</div>
 
 <script src="webjars/jquery/2.2.4/jquery.min.js"></script>
-<script src="webjars/bootstrap/3.3.6/bootstrap.min.js"></script>
+<link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+<script src="webjars/angularjs/1.5.5/angular.min.js"></script>
+<script src="webjars/angularjs/1.5.5/angular-route.min.js"></script>
+
+<script src="resources/app/script/App.js"></script>
+<script src="resources/app/script/AppRouter.js"></script>
+
+<script src="resources/app/script/WelcomeCtrl.js"></script>
+<%--<script src="resources/app/script/UserService.js"></script>--%>
+
 </body>
 </html>
