@@ -6,14 +6,15 @@
             {{ fc.message }}
         </div>
 
-        <p class="form-inline">
-            Please select an index* to determine
-            <input type="number" class="form-control" min="1" placeholder="index" data-ng-model="fc.index"/>
-            <small>Index must be between 1 and 46</small>
-            <button class="btn btn-info" data-ng-click="fc.getNthNumber()">n-th fibonacci number</button>
+        <form name="fibonacci" class="form-inline">
+            Please select an
+            <input name="index" type="number" min="1" max="46" required class="form-control" placeholder="index" data-ng-model="fc.index"/>
+            <span class="text-danger">*</span> to determine
+            <button class="btn btn-info" data-ng-click="fc.getNthNumber()" data-ng-disabled="fibonacci.index.$invalid">n-th fibonacci number</button>
             or
-            <button class="btn btn-warning" data-ng-click="fc.getFirstNNumber()">the first n fibonacci number</button>
-        </p>
+            <button class="btn btn-warning" data-ng-click="fc.getFirstNNumber()" data-ng-disabled="fibonacci.index.$invalid">the first n fibonacci number</button>
+        </form>
+        <p><small class="text-danger">Index must be between 1 and 46.</small></p>
 
     </div>
 

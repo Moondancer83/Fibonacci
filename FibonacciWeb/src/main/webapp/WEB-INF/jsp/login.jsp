@@ -13,11 +13,11 @@
     <title>Moondancer's Math | Login</title>
 
     <link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="resources/css/signin.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/signin.css" />
 </head>
 <body>
 
-<c:url var="loginUrl" value="/login" />
+<c:url var="loginUrl" value="${pageContext.request.contextPath}/login" />
 <div class="container">
     <form action="${loginUrl}" method="post" class="form-signin">
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>

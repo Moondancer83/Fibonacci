@@ -6,7 +6,7 @@
     core.controller('FibonacciCtrl', ['FibonacciService', function (FibonacciService) {
         var that = this;
         that.message = null;
-        that.index = 1;
+        that.index = null;
         that.result = null;
         that.results = null;
 
