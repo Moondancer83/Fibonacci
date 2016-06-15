@@ -5,7 +5,6 @@
 
     core.factory('FibonacciService', ['$http', function ($http) {
         function getNthNumber(index, successCallback, errorcallback) {
-            console.log(index);
             $http.get('/math/fibonacci/' + index).then(successCallback, errorcallback);
         }
 
