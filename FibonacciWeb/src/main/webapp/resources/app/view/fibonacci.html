@@ -1,0 +1,28 @@
+<div class="row" data-ng-controller="FibonacciCtrl as fc">
+    <div class="col-xs-12">
+        <h1>Fibonacci Calculator</h1>
+
+        <div data-ng-if="fc.message" class="alert alert-danger">
+            {{ fc.message }}
+        </div>
+
+        <form name="fibonacci" class="form-inline">
+            Please select an
+            <input name="index" type="number" min="1" max="46" required class="form-control" placeholder="index" data-ng-model="fc.index"/>
+            <span class="text-danger">*</span> to determine
+            <button class="btn btn-info" data-ng-click="fc.getNthNumber()" data-ng-disabled="fibonacci.index.$invalid">n-th fibonacci number</button>
+            or
+            <button class="btn btn-warning" data-ng-click="fc.getFirstNNumber()" data-ng-disabled="fibonacci.index.$invalid">the first n fibonacci number</button>
+        </form>
+        <p><small class="text-danger">Index must be between 1 and 46.</small></p>
+
+    </div>
+
+    <div data-ng-if="fc.result" class="col-xs-6 pull-left alert alert-info">
+        {{ fc.result }}
+    </div>
+
+    <div data-ng-if="fc.results" class="col-xs-6 pull-right alert alert-warning">
+        <div data-data-list data-list="fc.results"></div>
+    </div>
+</div>

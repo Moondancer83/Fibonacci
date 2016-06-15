@@ -1,0 +1,9 @@
+input[type=number] {
+    text-align: right;
+}
+input.ng-invalid.ng-touched {
+    background-color: #f2dede;
+}
+input.ng-valid.ng-touched {
+    background-color: #dff0d8;
+}
