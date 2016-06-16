@@ -31,7 +31,6 @@
 <script src="${pageContext.request.contextPath}/resources/app/script/AppRouter.js"></script>
 
 <script src="${pageContext.request.contextPath}/resources/app/script/WelcomeCtrl.js"></script>
-<script src="${pageContext.request.contextPath}/resources/app/script/UserService.js"></script>
 
 <script src="${pageContext.request.contextPath}/resources/app/script/FibonacciCtrl.js"></script>
 <script src="${pageContext.request.contextPath}/resources/app/script/FibonacciService.js"></script>
