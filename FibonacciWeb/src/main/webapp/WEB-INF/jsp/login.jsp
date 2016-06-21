@@ -17,9 +17,8 @@
 </head>
 <body>
 
-<c:url var="loginUrl" value="${pageContext.request.contextPath}/login" />
 <div class="container">
-    <form action="${loginUrl}" method="post" class="form-signin">
+    <form action="${pageContext.request.contextPath}/login" method="post" class="form-signin">
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         <h2 class="form-signin-heading">Please sign in</h2>
 
