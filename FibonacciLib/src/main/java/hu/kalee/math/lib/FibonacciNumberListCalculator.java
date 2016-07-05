@@ -7,5 +7,5 @@ import java.util.List;
  */
 @FunctionalInterface
 public interface FibonacciNumberListCalculator {
-    List<Integer> calculateFirstNNumbers(int index);
+    List<Number> calculateFirstNNumbers(int index);
 }
